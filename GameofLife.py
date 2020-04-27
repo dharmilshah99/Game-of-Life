@@ -5,7 +5,7 @@ from matplotlib import animation
 from SeedDict import seeds
 
 
-def initialize_world(seed = None, dimensions = (100, 100)):
+def initialize_world(dimensions, seed = None):
     '''
     Places a Seed at the center of a world of 0s. Else, randomly initialize with 0s and 1s.
 
@@ -65,31 +65,32 @@ def game_logic(i, j, world, num_neighbour):
     else:
         return 0
 
-def next_state(array):
+def next_state(world):
     '''
     Computes the next state of the World.
 
     Parameters
     ----------
-    array (array): Current World state.
+    world (array): Current World state.
 
     Output
     ------
     nxt_stp (array): Next World state.
+    
     '''
     #Prepare arrays.
     fil = np.ones((3, 3))
-    pad = np.pad(array, (1, 1), mode = 'wrap')
+    pad = np.pad(world, (1, 1), mode = 'wrap')
     #Dimensions of result.
-    res_x, res_y = np.shape(array)
+    res_x, res_y = np.shape(world)
     #Perform convolution.
     nxt_stp = np.zeros((res_x, res_y))
     for i in range(res_x):
         for j in range(res_y):
             #Subtract by 1 when value is 1. We shouldn't count the cell in question.
-            nxt_stp[i][j] = np.sum(pad[i:i + 3, j:j + 3] * fil) - array[i][j]
+            nxt_stp[i][j] = np.sum(pad[i:i + 3, j:j + 3] * fil) - world[i][j]
             #Perform game logic.
-            nxt_stp[i][j] = game_logic(i, j, array, nxt_stp[i][j])
+            nxt_stp[i][j] = game_logic(i, j, world, nxt_stp[i][j])
     return nxt_stp
 
 def states_of_game(world, generations):
@@ -104,6 +105,7 @@ def states_of_game(world, generations):
     Output
     ------
     states (list): List of World states at each 'step'.
+    
     '''
     #Array to save states. We include the initial state.
     states = [world]
@@ -126,7 +128,7 @@ def animate(states):
     img_ani (matplotlib animation object)
     '''
     #Set object.
-    fig = plt.figure(dpi = 100)
+    fig = plt.figure(dpi = 500)
     plt.axis('off')
     #Create plot for each state.
     img_arr = []
@@ -163,7 +165,7 @@ if __name__ == '__main__':
     #Generate variables.
     size, stat, seed = parse_var()
     #Compute states and animate.
-    world = initialize_world(seed, size)
+    world = initialize_world(size, seed)
     states = states_of_game(world, stat)
     state_gif = animate(states)
     #Display
