@@ -126,7 +126,7 @@ def animate(states):
     img_ani (matplotlib animation object)
     '''
     #Set object.
-    fig = plt.figure(dpi = 500)
+    fig = plt.figure(dpi = 100)
     plt.axis('off')
     #Create plot for each state.
     img_arr = []
