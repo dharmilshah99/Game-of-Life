@@ -76,7 +76,6 @@ def next_state(array):
     Output
     ------
     nxt_stp (array): Next World state.
-    
     '''
     #Prepare arrays.
     fil = np.ones((3, 3))
@@ -105,7 +104,6 @@ def states_of_game(world, generations):
     Output
     ------
     states (list): List of World states at each 'step'.
-    
     '''
     #Array to save states. We include the initial state.
     states = [world]
