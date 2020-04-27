@@ -1,5 +1,4 @@
 ## Contents
----
 - [Getting Started](#Getting-Started)
 - [Additional Arguments](#Additional-Arguments)
   * [Size](#Size)
@@ -7,7 +6,6 @@
   * [Seeds](#Seeds)
 
 ## Getting Started
----
 The script is dependent on three libraries: `numpy`, `matplotlib` and `argparse`. These dependencies can be installed through `pip`.
 
 ```
@@ -29,7 +27,6 @@ python GameofLife.py
 Bang. By default, the script produces 100 states of a 100 by 100, randomly intialized world.
 
 ## Additional Arguments
----
 The world can be seeded, and it's size along with the number of states to compute can be modified. These can be defined in command prompt.
 
 ```
