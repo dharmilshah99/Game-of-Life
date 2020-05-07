@@ -26,6 +26,11 @@ python GameofLife.py
 
 Bang. By default, the script produces 100 states of a 100 by 100, randomly intialized world.
 
+<p align="center">
+    <img src="https://github.com/BigusD/Game-of-Life/blob/master/Gifs/Random.gif">
+</p>
+
+
 ## Additional Arguments
 The world can be seeded, and it's size along with the number of states to compute can be modified. These can be defined in command prompt.
 
