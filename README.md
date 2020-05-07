@@ -54,9 +54,9 @@ Since we have defined the generations, 25 instead of 100 generations will be pro
 ### Seeds
 There are a number of Seeds to choose from: Glider, Glider Gun, Toad, Blinker, Pulsar, Beacon, Penta-Decathalon, Diehard, Boat, Acorn, Spaceship and Block Switch Engine. Some examples:
  
-|Glider             |Pulsar              |Spaceship              |Beacon              |Acorn             |
-:------------------:|:------------------:|:---------------------:|:------------------:|:-----------------:
-![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|![](Gifs/Acorn.gif)
+|Glider             |Pulsar              |Spaceship              |Beacon              |Acorn              |
+:------------------:|:------------------:|:---------------------:|:------------------:|:-----------------:|
+![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|![](Gifs/Acorn.gif)|
 
 To feed a Pulsar, place it within double quotes.
 
