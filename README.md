@@ -54,14 +54,14 @@ Since we have defined the generations, 25 instead of 100 generations will be pro
 ### Seeds
 There are a number of Seeds to choose from: Glider, Glider Gun, Toad, Blinker, Pulsar, Beacon, Penta-Decathalon, Diehard, Boat, Acorn, Spaceship and Block Switch Engine. Some examples:
  
-|Glider             |Pulsar              |Spaceship              |Beacon              |
-:------------------:|:------------------:|:---------------------:|:-------------------:
-![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|
+|Glider             |Pulsar              |Spaceship              |Beacon              |Acorn             |
+:------------------:|:------------------:|:---------------------:|:-------------------:------------------:
+![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|![](Gifs/Acorn.gif)
 
 To feed a Pulsar, place it within double quotes.
 
 ```
-python GameofLife.py -size 20,20 -generations 25 -seed "Pulsar"
+python GameofLife.py -size 30,30 -generations 25 -seed "Pulsar"
 ```
 
 This will produce 10 generations of Pulsar, placed at the center of a 30 by 30 world of zeros.
