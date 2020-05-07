@@ -56,7 +56,7 @@ There are a number of Seeds to choose from: Glider, Glider Gun, Toad, Blinker, P
  
 |Glider             |Pulsar              |Spaceship              |Beacon              |Acorn              |
 :------------------:|:------------------:|:---------------------:|:------------------:|:-----------------:|
-![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|![](Gifs/save3.gif)|
+![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|![](Gifs/Acorn.gif)|
 
 To feed a Pulsar, place it within double quotes.
 
