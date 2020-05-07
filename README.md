@@ -56,7 +56,7 @@ There are a number of Seeds to choose from: Glider, Glider Gun, Toad, Blinker, P
  
 |Glider             |Pulsar              |Spaceship              |Beacon              |Acorn              |
 :------------------:|:------------------:|:---------------------:|:------------------:|:-----------------:|
-![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|<img width=90% height=90% src="https://github.com/BigusD/Game-of-Life/blob/master/Gifs/Acorn.gif">|
+![](Gifs/Glider.gif)|![](Gifs/Pulsar.gif)|![](Gifs/Spaceship.gif)|![](Gifs/Beacon.gif)|<img width=60% height=60% src="https://github.com/BigusD/Game-of-Life/blob/master/Gifs/Acorn.gif">|
 
 To feed a Pulsar, place it within double quotes.
 
